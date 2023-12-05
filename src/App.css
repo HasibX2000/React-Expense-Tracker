@@ -1,42 +1,157 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 11px;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  display: flex;
+  justify-content: center;
+  background: #f0f0f0;
+  color: #1e272e;
+}
+
+.container {
+  width: 320px;
+  padding: 40px;
+}
+
+.header .title {
+  font-size: 2rem;
+  color: #1e272e;
+  margin-bottom: 1rem;
+}
+
+.main .balance {
+  color: #1e272e;
+  margin-bottom: 1rem;
+}
+.main .balance .title {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.main .balance .amount {
+  font-size: 3rem;
+  line-height: 1;
+}
+.main .balance-area {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
   text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 5px #ddd;
+}
+.main .balance-area .border {
+  font-size: 2rem;
+}
+.main .balance-area .action-name {
+  color: #1e272e;
+  font-size: 1.5rem;
+}
+.main .balance-area .action-income {
+  color: #0be881;
+}
+.main .balance-area .action-expense {
+  color: #ff3f34;
+}
+.main .transaction .title {
+  font-size: 2rem;
+  color: #1e272e;
+}
+.main .transaction .hr {
+  margin-bottom: 1rem;
+  border-top: 1px solid #bebebe;
+}
+.main .transaction .input {
+  width: calc(100% - 10px);
+  border: 1px solid #dfdfdf;
+  outline: 0;
+  margin-bottom: 1rem;
+  padding: 5px;
+}
+.main .transaction .input::-moz-placeholder {
+  color: #bebebe;
+}
+.main .transaction .input::placeholder {
+  color: #bebebe;
+}
+.main .transaction .select {
+  width: calc(104% - 10px);
+  border: 1px solid #dfdfdf;
+  outline: 0;
+  margin-bottom: 1rem;
+  padding: 3px;
+  font-family: 'Titillium Web', sans-serif;
+}
+.main .transaction .select .option {
+  font-family: 'Titillium Web', sans-serif;
+}
+.main .transaction .button {
+  width: 100%;
+  padding: 5px;
+  background: #ad5aff;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-family: 'Titillium Web', sans-serif;
+  cursor: pointer;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+.main .history .title {
+  font-size: 2rem;
+  color: #1e272e;
+}
+.main .history .hr {
+  margin-bottom: 1rem;
+  border-top: 1px solid #bebebe;
+}
+.main .history .history-list .history-item {
+  background: #ffffff;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  padding: 3px;
+  padding-left: 5px;
+  font-weight: 600;
+  color: #1e272e;
+}
+.main .history .history-list .expense {
+  position: relative;
+}
+.main .history .history-list .expense::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc(100% - 7px);
+  height: 100%;
+  border-right: 7px solid #ff3f34;
+}
+.main .history .history-list .income {
+  position: relative;
+}
+.main .history .history-list .income::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc(100% - 7px);
+  height: 100%;
+  border-right: 7px solid #0be881;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+.footer {
+  text-align: center;
+  color: #1e272e;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+} /*# sourceMappingURL=style.css.map */
